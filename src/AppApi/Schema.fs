@@ -45,9 +45,12 @@ module Schema =
                             typedef = ConnectionOf Todo,
                             description = "the list of todo",
                             args = Connection.allArgs,
-                            resolve = fun ctx user -> 
-                              let slice = todos |> List.where(fun t -> t.Owner = user)
-                              resolveSlice (fun t -> t.Id) slice ctx ()) ])
+                            resolve =
+                                fun ctx user ->
+                                    let slice =
+                                        todos |> List.where (fun t -> t.Owner = user)
+
+                                    resolveSlice (fun t -> t.Id) slice ctx ()) ])
 
     and Todo: Todo ObjectDef =
         Define.Object<Todo>

@@ -12,18 +12,6 @@ open FSharp.Data.GraphQL
 open FSharp.Data.GraphQL.Execution
 open Root
 
-let _tryGetQuery (data: byte ReadOnlySpan): string option =
-    let data = Encoding.UTF8.GetString data
-    if isNull data || data = "" then
-        None
-    else
-        Json.deserialize<Map<string, obj>> (data)
-        |> Map.tryFind ("query")
-        |> Option.map (function
-            | :? string as q -> Some q
-            | _ -> None)
-        |> Option.defaultValue None
-
 let tryGetQuery (data: byte ReadOnlySpan): string option =
     let data = Encoding.UTF8.GetString data
     maybe {
@@ -51,7 +39,7 @@ let graphql (schema: _ Schema): WebPart =
                     | Direct (data, []) -> Json.serialize data
                     | Direct (_, errs) ->
                         printfn
-                            "Error: %A"
+                            "Error: %A\n"
                             (errs
                              |> List.map string
                              |> List.reduce (fun acc x -> acc + ",\n" + x))
