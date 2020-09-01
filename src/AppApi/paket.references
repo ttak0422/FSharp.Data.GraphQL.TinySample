@@ -1,0 +1,5 @@
+Fleece.SystemTextJson
+FSharp.Core
+FSharp.Data.GraphQL.Server
+Suave
+Newtonsoft.Json

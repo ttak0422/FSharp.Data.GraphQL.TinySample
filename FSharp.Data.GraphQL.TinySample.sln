@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26124.0
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F00CF16E-865E-4682-B673-4FC602E3C9F1}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AppApi", "src\AppApi\AppApi.fsproj", "{E85314CB-812A-48E5-8D99-AFF38D8CAFAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E85314CB-812A-48E5-8D99-AFF38D8CAFAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E85314CB-812A-48E5-8D99-AFF38D8CAFAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E85314CB-812A-48E5-8D99-AFF38D8CAFAB}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E85314CB-812A-48E5-8D99-AFF38D8CAFAB}.Debug|x64.Build.0 = Debug|Any CPU
+		{E85314CB-812A-48E5-8D99-AFF38D8CAFAB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E85314CB-812A-48E5-8D99-AFF38D8CAFAB}.Debug|x86.Build.0 = Debug|Any CPU
+		{E85314CB-812A-48E5-8D99-AFF38D8CAFAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E85314CB-812A-48E5-8D99-AFF38D8CAFAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E85314CB-812A-48E5-8D99-AFF38D8CAFAB}.Release|x64.ActiveCfg = Release|Any CPU
+		{E85314CB-812A-48E5-8D99-AFF38D8CAFAB}.Release|x64.Build.0 = Release|Any CPU
+		{E85314CB-812A-48E5-8D99-AFF38D8CAFAB}.Release|x86.ActiveCfg = Release|Any CPU
+		{E85314CB-812A-48E5-8D99-AFF38D8CAFAB}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E85314CB-812A-48E5-8D99-AFF38D8CAFAB} = {F00CF16E-865E-4682-B673-4FC602E3C9F1}
+	EndGlobalSection
+EndGlobal
